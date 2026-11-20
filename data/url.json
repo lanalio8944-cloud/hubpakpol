@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {
+      "id": "abc123xyz",
+      "urls": [
+        "https://example.com/artikel-1",
+        "https://example.com/artikel-2",
+        "https://docs.example.org/guide"
+      ]
+    },
+    {
+      "id": "k9m2p4q7",
+      "urls": [
+        "https://figma.com/community/file/xxx",
+        "https://dribbble.com/shots/xxx"
+      ]
+    }
+  ]
+}
