@@ -42,7 +42,6 @@ export default async function Page({ params }: PageProps) {
         </div>
       </header>
 
-      {/* BARU: notice adblock, muncul hanya jika terdeteksi */}
       <AdBlockDetector />
 
       <AdSlot />

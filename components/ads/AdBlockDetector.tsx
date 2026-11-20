@@ -5,10 +5,11 @@ import { detectAdBlock, type AdBlockStatus } from "@/lib/ads/adblock";
 import AdBlockNotice from "./AdBlockNotice";
 
 interface Props {
+  /** Interval re-check dalam ms. Default 3000 agar overlay hilang otomatis. */
   recheckInterval?: number;
 }
 
-export default function AdBlockDetector({ recheckInterval = 0 }: Props) {
+export default function AdBlockDetector({ recheckInterval = 3000 }: Props) {
   const [status, setStatus] = useState<AdBlockStatus>("unknown");
 
   useEffect(() => {
