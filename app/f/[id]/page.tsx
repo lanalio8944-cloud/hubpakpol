@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getEntryById, normalizeUrl, getAllIds } from "@/lib/urls";
 import NotepadView from "@/components/NotepadView";
+import AdSlot from "@/components/AdSlot";
+import AdBlockDetector from "@/components/ads/AdBlockDetector";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -39,6 +41,11 @@ export default async function Page({ params }: PageProps) {
           <span>ID: {entry.id}</span>
         </div>
       </header>
+
+      {/* BARU: notice adblock, muncul hanya jika terdeteksi */}
+      <AdBlockDetector />
+
+      <AdSlot />
 
       <NotepadView id={entry.id} urls={urls} />
     </main>
