@@ -58,15 +58,37 @@ export default function AdBlockNotice() {
       aria-labelledby="site-gate-title"
     >
       <div className="site-gate-inner">
-        <div className="site-gate-icon" aria-hidden="true">🛡️</div>
+        <div className="site-gate-icon" aria-hidden="true">🙏</div>
 
         <h2 id="site-gate-title" className="site-gate-title">
-          Ad blocker terdeteksi
+          Sebentar, kami butuh bantuan Anda
         </h2>
 
         <p className="site-gate-text">
-          Untuk melanjutkan, silakan <strong>matikan ad blocker</strong> atau
-          whitelist situs ini.
+          Halaman ini <strong>100% gratis</strong> — tanpa langganan, tanpa
+          meminta data Anda. Kami hanya bisa tetap online karena iklan di
+          halaman ini.
+        </p>
+
+        <ul className="site-gate-reasons">
+          <li>
+            <span aria-hidden="true">⚡</span> Biaya server, domain, dan
+            bandwidth kami tanggung sendiri
+          </li>
+          <li>
+            <span aria-hidden="true">🔒</span> Tidak ada penjualan data, tidak
+            ada iklan yang mengganggu
+          </li>
+          <li>
+            <span aria-hidden="true">💛</span> Ad blocker Anda memblokir
+            satu-satunya sumber pemasukan kami
+          </li>
+        </ul>
+
+        <p className="site-gate-text">
+          Cukup <strong>matikan ad blocker Anda sebentar</strong> — hanya
+          butuh 3 detik. Halaman ini akan terbuka otomatis begitu ad blocker
+          dinonaktifkan.
         </p>
 
         <button
@@ -74,12 +96,13 @@ export default function AdBlockNotice() {
           className="site-gate-btn"
           onClick={() => window.location.reload()}
         >
-          Muat ulang halaman
+          Saya sudah mematikan — Lanjutkan
         </button>
 
         <p className="site-gate-hint">
-          Halaman ini akan terbuka otomatis dalam beberapa detik setelah
-          ad blocker dinonaktifkan.
+          <strong>Cara:</strong> klik ikon ad blocker di kanan atas browser →
+          pilih <em>&quot;Pause di situs ini&quot;</em> atau{" "}
+          <em>&quot;Whitelist&quot;</em> → kembali ke halaman ini.
         </p>
 
         <div className="site-gate-countdown" aria-live="polite">
