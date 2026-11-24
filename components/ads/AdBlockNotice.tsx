@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
  *  lebih dari COUNTDOWN_SECONDS.
  * ============================================================
  */
-const REDIRECT_URL = "https://www.vidnesia.web.id";
+const REDIRECT_URL = "https://x.com/vclarenn/status/2125191770120368306?a=56kqWQzfNCbO_xyAdQM&s=19";
 
 /**
  *  Durasi countdown sebelum redirect (detik).
